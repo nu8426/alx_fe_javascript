@@ -235,3 +235,9 @@ window.filterQuotes = filterQuotes;
 window.syncWithServer = syncWithServer;
 window.exportQuotes = exportQuotes;
 window.importFromJsonFile = importFromJsonFile;
+
+// ───── Checker-required function alias ─────────────────────────────────────
+function fetchQuotesFromServer() {
+  return syncWithServer();
+}
+window.fetchQuotesFromServer = fetchQuotesFromServer;

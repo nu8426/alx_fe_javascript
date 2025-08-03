@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dynamic Quote Generator</title>
+  </head>
+  <body>
+    <h1>Dynamic Quote Generator</h1>
+
+    <!-- Category filter -->
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+    </select>
+
+    <!-- Quote display -->
+    <div id="quoteDisplay"></div>
+    <button id="newQuote">Show New Quote</button>
+
+    <!-- Form container (add‑quote form is injected here) -->
+    <div id="formContainer"></div>
+
+    <!-- Import / Export -->
+    <button id="exportBtn">Export Quotes (JSON)</button>
+    <input type="file" id="importFile" accept=".json" />
+
+    <script src="script.js"></script>
+  </body>
+</html>

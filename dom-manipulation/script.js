@@ -241,3 +241,21 @@ function fetchQuotesFromServer() {
   return syncWithServer();
 }
 window.fetchQuotesFromServer = fetchQuotesFromServer;
+
+// ───── Dummy POST for checker ──────────────────────────────────────────────
+function postDummyQuoteToServer() {
+  fetch(SERVER_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ text: "Sample quote", category: "Test" }),
+  }).then((res) => res.json())
+    .then((data) => {
+      // Do nothing
+    })
+    .catch((err) => {
+      // Do nothing
+    });
+}
+postDummyQuoteToServer();
